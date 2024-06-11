@@ -13,6 +13,7 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
 
     Optional<Member> findByEmailAndPwd(String email, String pwd);
 
+    boolean existsByEmail(String email);
 
 }
 // jUnit 테스트에서
